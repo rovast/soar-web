@@ -15,10 +15,10 @@ ENV SOAR_WEB_PACKAGE_DEPS \
 # persistent / runtime deps
 RUN apt-get update && apt-get install -y \
 		$SOAR_WEB_PACKAGE_DEPS \
-	--no-install-recommends && rm -r /var/lib/apt/lists/*
+	    && rm -r /var/lib/apt/lists/*
 
 RUN git clone https://github.com/rovast/soar-web.git /opt/soar-web
-RUN cd /opt/soar-web && pip install Flask pymysql
+RUN cd /opt/soar-web && pip install -r requirement.txt
 RUN chmod -R 755 /opt/soar-web   
 EXPOSE 5088
 CMD ["python","/opt/soar-web/soar-web.py"]
