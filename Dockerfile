@@ -20,5 +20,5 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/rovast/soar-web.git /opt/soar-web
 RUN cd /opt/soar-web && pip install -r requirement.txt
 RUN chmod -R 755 /opt/soar-web   
-EXPOSE 5088
+EXPOSE 5077
 CMD ["python","/opt/soar-web/soar-web.py"]
