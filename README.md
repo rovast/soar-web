@@ -1,4 +1,20 @@
 # soar-web
+
+forked from [soar-web](https://github.com/xiyangxixian/soar-web)
+
+**分支**
+- master 修复 soar-web 之前的 docker [中文不支持问题](https://github.com/xiyangxixian/soar-web/issues/71)
+- customized 自定义的分支，根据自己的需求重新定制了 soar
+
+**docker集成**
+
+使用原版 soar 
+```bash
+# 运行后，打开 http://127.0.0.1:5077 即可访问
+docker run -d -p 5077:5077 rovast/soar-web
+```
+
+
 基于小米 [soar](https://github.com/XiaoMi/soar) 的开源 sql 分析与优化的 web 图形化工具，支持 soar 配置的添加、修改、复制，多配置切换，配置的导出、导入与导入功能。
 
 ![soar](https://raw.githubusercontent.com/xiyangxixian/soar-web/master/doc/img/example-1.png?v=2)
