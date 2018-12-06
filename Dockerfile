@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 		$SOAR_WEB_PACKAGE_DEPS \
 	    && rm -r /var/lib/apt/lists/*
 
-RUN git clone https://github.com/rovast/soar-web.git /opt/soar-web
+RUN git clone -b customized https://github.com/rovast/soar-web.git /opt/soar-web
 RUN cd /opt/soar-web && pip install -r requirement.txt
 RUN chmod -R 755 /opt/soar-web   
 EXPOSE 5077
