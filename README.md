@@ -14,6 +14,10 @@ forked from [soar-web](https://github.com/xiyangxixian/soar-web)
 docker run -d -p 5077:5077 rovast/soar-web
 ```
 
+以下是 [soar-web](https://github.com/xiyangxixian/soar-web) 初始项目的 README 说明
+
+---
+
 
 基于小米 [soar](https://github.com/XiaoMi/soar) 的开源 sql 分析与优化的 web 图形化工具，支持 soar 配置的添加、修改、复制，多配置切换，配置的导出、导入与导入功能。
 
